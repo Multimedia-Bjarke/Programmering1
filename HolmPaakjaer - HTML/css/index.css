@@ -1,0 +1,78 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Pixelify+Sans:wght@400..700&family=Protest+Guerrilla&display=swap");
+
+/* fonte */
+@font-face {
+  font-family: "folkin";
+  src: url(/fonts/Folkin.ttf);
+}
+
+/* Variabler */
+:root{
+    --Pistachio:#3A441D;
+    --YellowFlax: #ffef93;
+    --Vanilla: #fff5b6;
+    --BrownIsh:  #A27A69;
+    --Black: #000000;
+
+
+
+body{
+    background-color: var(--Vanilla);
+    background-image: url(/images/HP_Back_TEST.png);
+    margin-left: 40px;
+}
+
+.kolonne{
+  display: flex; justify-content: space-evenly;
+  font-family: "folkin";
+  font-size: 30px;
+}
+
+h1{
+    color: var(--Vanilla);
+    font-family: "folkin";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  position: absolute;
+  left: 35px;
+  top: 100px;
+}
+
+.kolonne:before{
+    content: url(/images/Julekort_100x100.png);
+    position: fixed;
+    left: 30px;
+    border:10px solid;
+    border-radius: 50%;
+    border-color: #ffef93;
+    border-radius: 50%;
+    
+}
+
+article{
+    color: var(--Vanilla);
+    font-family: "folkin";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px; ;
+  position:absolute;
+  left: 35px;
+  top: 250px;
+
+}
+
+
+/* Hover effekter */
+a{
+  color: var(--Vanilla);
+}
+
+a:link{
+  text-decoration: none;}
+}
+
+.hover:hover{
+  transform: scale(1.2);
+}

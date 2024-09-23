@@ -1,0 +1,60 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Pixelify+Sans:wght@400..700&family=Protest+Guerrilla&display=swap");
+
+/* Variabler */
+:root{
+    --Pistachio:#3A441D;
+    --YellowFlax: #ffef93;
+    --Vanilla: #fff5b6;
+    --BrownIsh:  #A27A69;
+    --Black: #000000;
+
+
+
+body{
+    background-color: var(--Vanilla);
+    background-image: url(Images/About_Picture_1920x1080.png);
+    margin-left: 40px;
+}
+
+
+.kolonne {
+  display: flex;
+}
+
+.tekstgul {
+  color: var(--Vanilla);
+}
+h1{
+    color: var(--Vanilla);
+    font-family:'Bungee Tint', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+h1::after{
+    content: url(./Images/Julekort_100x100.png);
+    
+}
+
+p{
+    color: var(--Vanilla);
+    font-family:'Bungee Tint', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px; ;
+}
+
+a{
+  color: var(--Vanilla);
+}
+
+a:hover{
+  color: var(--Pistachio);
+  font-size: 15px;
+}
+a:link{
+  text-decoration: none;
+}
+}
