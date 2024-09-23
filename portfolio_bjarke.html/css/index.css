@@ -1,0 +1,144 @@
+body{
+    background-image: url(/images/Klit_siluette_stor.jpg);
+    position: scroll;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+/* text*/
+
+h1{
+    color: blanchedalmond;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+.AV{
+    transform: scale(0.2);
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    opacity: 95%;
+}
+
+.fyr{
+    transform: scale(0.1);
+    position: absolute;
+    left: -800px;
+    top: -1500px;
+    opacity: 95%;
+}
+.baenk{
+    transform: scale(0.1);
+    position: absolute;
+    left: -200px;
+    top: -2500px;
+    opacity: 95%;
+}
+
+img{
+    border-radius: 2%;
+}
+
+.digt{
+    transform: scale(0.2);
+    position: absolute;
+    left: -700px;
+    top: 400px;
+    opacity: calc(90%);
+    opacity: 95%;
+}
+.digt:hover{
+    transition: 0.3s ease;
+    transform: scale(0.25)
+}
+#podcast{
+    color: blanchedalmond;
+    transform: scale(1.3);
+    position: absolute;
+    left: 265px;
+    top: 950px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.dream{
+    transform: scale(0.3);
+    position: absolute;
+    left: -400px;
+    top: -50px;
+    margin-top: -150px;
+    opacity: 95%;
+}
+
+.dream:hover{
+    transition: 0.3s ease;
+    transform: scale(0.35)
+}
+
+#dream_img{
+    color: blanchedalmond;
+    transform: scale(1.2);
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+.klit3{
+    transform: scale(0.1);
+    position: absolute;
+    left: -250px;
+    top: -1000px;
+    margin-top: -150px;
+    opacity: 95%;}
+.maja{
+    transform: scale(0.1);
+    position: absolute;
+    left: -1500px;
+    top: -800px;
+    margin-top: -150px;
+    opacity: 95%;}
+
+.kvote2{
+    transform: scale(0.2);
+    position: absolute;
+    left: -100px;
+    top: 200px;
+    margin-top: -150px;
+    opacity: 95%;}
+
+.kvote2:hover{
+    transition: 0.3s ease;
+    transform: scale(0.25)
+}
+
+#kvote_img{
+    color: blanchedalmond;
+    transform: scale(1.3);
+    position: absolute;
+    left: 800px;
+    top: 450px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.lina1{
+    transform: scale(0.1);
+    position: absolute;
+    left: -800px;
+    top: -600px;
+    margin-top: -150px;
+    opacity: 95%;
+}
+
+.bjarke{
+    transform: scale(0.1);
+    position: absolute;
+    left: 100px;
+    top: -850px;
+    margin-top: -150px;
+    opacity: 95%; 
+}
