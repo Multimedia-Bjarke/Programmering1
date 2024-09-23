@@ -142,3 +142,13 @@ img{
     margin-top: -150px;
     opacity: 95%; 
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {background-image: url(/images/Klit_siluette_Mobile.jpg);}
+.overskrift {
+    position: absolute;
+    left: -500px;
+    top: 200px;
+  }
+}
