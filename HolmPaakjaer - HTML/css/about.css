@@ -1,6 +1,12 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Pixelify+Sans:wght@400..700&family=Protest+Guerrilla&display=swap");
 
+/* fonte */
+@font-face {
+  font-family: "folkin";
+  src: url(/fonts/Folkin.ttf);
+}
+
 /* Variabler */
 :root{
     --Pistachio:#3A441D;
@@ -9,52 +15,98 @@
     --BrownIsh:  #A27A69;
     --Black: #000000;
 
-
-
-body{
+ body{
     background-color: var(--Vanilla);
-    background-image: url(Images/About_Picture_1920x1080.png);
+    background-image: url(/images/About_Picture_1920x1080.png);
     margin-left: 40px;
+    background-attachment:scroll;
+  }
+  
+
+/* menu */
+.menu{
+  text-shadow: 20px 20px;
+  opacity: 80;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.kolonne{
+  display: flex; justify-content: space-evenly;
+  font-family: "folkin";
+  font-size: 30px;
+  margin-right: 50px;
+  /* ændre hvis du vil have bjælken til at følge med - men mangler at links følger med også*/
+  /* position: fixed; */
 }
 
-
-.kolonne {
-  display: flex;
+a{
+  color: var(--Vanilla);
+  padding-left: 110px;
 }
+
+/* text */
 
 .tekstgul {
   color: var(--Vanilla);
 }
 h1{
     color: var(--Vanilla);
-    font-family:'Bungee Tint', sans-serif;
+    font-family: "folkin";
   font-weight: 400;
   font-style: normal;
   font-size: 50px;
+  position: absolute;
+  top: 100px;
 }
 
-h1::after{
-    content: url(./Images/Julekort_100x100.png);
-    
+.kolonne:before{
+  content: url(/images/Julekort_100x100.png);
+  position: absolute;
+  left: 30px;
+  border:10px solid;
+  border-radius: 50%;
+  border-color: #ffef93;
+  border-radius: 50%;
+  
 }
 
 p{
     color: var(--Vanilla);
-    font-family:'Bungee Tint', sans-serif;
+    font-family:"folkin";
   font-weight: 400;
   font-style: normal;
-  font-size: 25px; ;
+  font-size: 25px;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
-a{
+.intro{
+  background-color: #dfc9c9a1;
+  height: 80px;
+  width: 1270px;
+  padding-inline: 15px;
+  padding-top: 15px;
+  border-radius: 15px;
+}
+.article{
   color: var(--Vanilla);
+    font-family:"folkin";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  position: relative;
+  top: 200px;
+  padding: 30px;
 }
 
-a:hover{
-  color: var(--Pistachio);
-  font-size: 15px;
-}
+
+/* Hover effekter */
 a:link{
-  text-decoration: none;
+  text-decoration: none;}
+}
+
+.menu:hover{
+  transform: scale(1.2);
+  transition: .3s ease-in;
 }
 }
