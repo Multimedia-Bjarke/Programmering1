@@ -1,0 +1,110 @@
+body{
+    background-color: cyan;
+    background-image: url(/images/Orange_manga.png);
+    color: white;
+    font-family: 'myfont';
+    font-size: larger;
+}
+
+@font-face{
+    font-family: 'myfont';
+    src: url(/fonts/manga/Manga.otf);
+}
+
+.forms{
+    display: block;
+    justify-content: left;
+    align-items: left;
+    position: absolute;
+    left: 40%;
+}
+.nummer{
+padding: 30px;
+
+}
+.nummer:hover{
+    transform: scale(1.2);
+}
+.titel{
+    padding: 30px;
+
+}
+
+.titel:hover{
+    transform: scale(1.2);
+}
+.fornavn{
+    padding: 30px;
+
+}
+
+.fornavn:hover{
+    transform: scale(1.2);
+}
+.datetime{
+    padding: 30px;
+
+}
+
+.datetime:hover{
+    transform: scale(1.2);
+}
+.submit{
+    padding: 30px;
+
+}
+
+.submit:hover{
+    transform: scale(1.2);
+}
+.time{
+    padding: 30px;
+
+}
+
+.time:hover{
+    transform: scale(1.2);
+}
+.email{
+    padding: 30px;
+
+}
+
+.email:hover{
+    transform: scale(1.2);
+}
+.ikoner{
+    font-size: 3rem;
+    color: black;
+}
+
+
+.footer{
+    display: flex;
+    border-color: aliceblue;
+    color: aliceblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+}
+
+footer article{
+    border:  6px;
+    width: 45%;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {background: red; background-image: url(/images/OnePunchMobile.png);}
+    main{font-size: xl;}
+    .footer{position: absolute;}
+    footer article {}
+    .forms{justify-content: ;}
+  }
+

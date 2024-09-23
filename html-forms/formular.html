@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formular</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/formular.css" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <!-- formular her -->
+      <form class="forms" action="svar.html">
+        <div class="fornavn">
+          <i class="fa-solid fa-signature fa-spin-pulse"></i>
+          <label for="fNavn">Dit fulde navn </label>
+          <input type="text" id="fNavn" name="fNavn" value="Skriv dit navn" />
+        </div>
+        <div class="email">
+          <i class="fa-regular fa-envelope"></i>
+          <label for="email">enter email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="eksempel@mail.com"
+          />
+        </div>
+
+        <div class="time">
+          <i class="fa-regular fa-clock"></i>
+          <label for="time">Tid</label>
+          <input type="time" name="time" id="time" />
+        </div>
+        <div class="titel">
+          <i class="fa-solid fa-venus-mars"></i>
+          <label for="Hr">Hr</label>
+          <input type="radio" name="Hr" />
+
+          <label for="Fru">Fru</label>
+          <input type="radio" name="Fru" />
+
+          <label for="neither">Neither</label>
+          <input type="radio" name="neither" id="neither" />
+        </div>
+
+        <div class="datetime">
+          <i class="fa-solid fa-calendar-days"></i>
+          <label for="datetime" name="datetime">Dato/tid</label>
+          <input type="datetime-local" name="datetime" id="datetime" />
+        </div>
+        <div class="nummer">
+          <i class="fa-sharp-duotone fa-solid fa-phone"></i>
+          <label for="tel">tel</label>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Indsend" />
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <article>Adresse1</article>
+      <article>Adresse2</article>
+      <article>Adresse3</article>
+    </footer>
+  </body>
+</html>
