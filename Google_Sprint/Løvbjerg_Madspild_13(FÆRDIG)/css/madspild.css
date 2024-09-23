@@ -1,0 +1,179 @@
+/* Body */
+body {
+    background-image: url(../images/background_madspild2.jpg);max-width: 100%; height: auto;
+    background-position: center; right: 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#8b1430 ;
+    background-size: 100%;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+
+/*text*/
+@font-face {
+    font-family: 'MyFont';
+    src: url(/fonts/AnodyneCombined/Anodyne.ttf);
+}
+
+.overskrift {
+   position: absolute;
+   margin-top: 30px;
+   left: 250px;
+   top: -10px;
+   transform: scale(0.8);
+}
+
+#fem{
+size: 30px;
+text-decoration-color: green;
+}
+
+p {
+    text-align: left;
+    color: white;
+    font-family: 'MyFont';
+    font-size: 50px;
+}
+.paragraphLeft1 {
+    text-align: left;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    display: block
+}
+
+.paragraphLeft2 {
+    text-align: left;
+    position: absolute;
+    left: 300px;
+    top: 450px;
+    display: block
+}
+.paragraphMid1 {
+    text-align: left;
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    display: block;
+}
+
+.paragraphMid2 {
+    text-align: left;
+    position: absolute;
+    left: 700px;
+    top: 450px;
+    display: block;
+}
+.paragraphRight {
+    text-align: left;
+    position: absolute;
+    left: 1100px;
+    top: 200px;
+    display: block;
+}
+
+/* pile */
+.pil5 {
+    position: absolute;
+    left: 0px;
+    top: 110px;
+}
+.pil5:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+.pil4 {
+    position: absolute;
+    left: 0px;
+    top: 170px;
+}
+
+.pil4:hover {
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+.pil3 {
+    position: absolute;
+    left: 0px;
+    top: 230px;
+}
+.pil3:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+.pil2 {
+    position: absolute;
+    left: 0px;
+    top: 170px;
+}
+
+.pil2:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+.pil1{
+    position: absolute;
+    left: 0px;
+    top: 230px;
+}
+
+.pil1:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+/* Icons */
+div {
+    padding-bottom: 25%;
+}
+.icons {
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+
+    
+}
+.img_icons{
+    height: 130px;
+    width: 130px;
+}
+
+/* icons hover */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; 
+}
+.image {
+    width: 100%;
+    height: auto;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }

@@ -1,0 +1,101 @@
+/* Body */
+body {
+    background-image: url(../images/Baggrund_kort1.png);max-width: 100%; height: auto;
+    background-position: center; right: 300px;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-color:#8b1430 ;
+    background-size: 100%;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+/*text*/
+@font-face {
+    font-family: 'MyFont';
+    src: url(/fonts/AnodyneCombined/Anodyne.ttf);
+}
+
+@font-face{
+    font-family: 'Colus';
+    src: url(/fonts/ColusRegular/Colus-Regular.otf);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'MyFont';
+    font-size: 60px;
+    position: absolute;
+    left:150px;
+    top: 200px;
+    margin-top: 68px;
+    width:1200px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-family: 'Colus';
+}
+
+/* Icons */
+div {
+    padding-bottom: 25%;
+}
+.icons {
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+
+    
+}
+.img_icons{
+    height: 130px;
+    width: 130px;
+}
+
+/* icons hover */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; 
+}
+.image {
+    width: 100%;
+    height: auto;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.searchbar{
+    position: absolute;
+    left: 340px;
+    top: 300px
+}

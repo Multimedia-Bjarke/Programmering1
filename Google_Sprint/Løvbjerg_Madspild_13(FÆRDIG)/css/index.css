@@ -1,0 +1,99 @@
+/* Header */
+/*header{
+    background-color: #8b1430;
+} */
+
+/* Body */
+body {
+    background-image: url(../images/background_landingpage3.jpg);max-width: 100%; height: auto;
+    background-position: center; right: 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#8b1430 ;
+    background-size: 100%;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden;
+}
+
+img #header {
+ 
+
+}
+
+
+/* Icons */
+div {
+    padding-bottom: 25%;
+}
+.icons {
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+img{
+    height: 130px;
+    width: 130px;
+}
+
+/*text*/
+@font-face {
+    font-family: 'MyFont';
+    src: url(/fonts/AnodyneCombined/Anodyne.ttf);
+}
+
+h1 {
+    text-align: left;
+    color: white;
+    font-family: 'MyFont';
+    font-size: 135px;
+    position: absolute;
+    left: 300px;
+    top: 25px;
+    margin-top: 68px;
+}
+
+/* links */
+a:hover {
+    size: 100px
+}
+
+/* icons hover */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; 
+}
+.image {
+    width: 100%;
+    height: auto;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
