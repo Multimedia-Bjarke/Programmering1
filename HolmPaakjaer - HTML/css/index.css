@@ -22,8 +22,9 @@ body{
     background-image: url(/images/HP_Back_TEST.png);
     margin-left: 40px;
     background-attachment:scroll;
-    position: fixed;
-    background-position:bottom;
+    /* hvis du vil have den til ikke at scrolle: 
+    position: fixed*/
+    background-position:top;
 }
 
 /* menu */
@@ -97,4 +98,11 @@ a:link{
 @media only screen and (max-width: 600px) {
   body {background: red; background-image: url(/images/Wood_Texture_Background.png);}
   main{font-size: xl;}
+}
+
+.video{
+  position: absolute;
+  top: 600px;
+  left: 290px;
+  margin-top: 15px;
 }
