@@ -5,8 +5,6 @@
 
 /* Define variables in the :root */
  :root {
-   --contrast: lime;
-   --backgr: #000;
  }
 
 /* Use your variables on elements */

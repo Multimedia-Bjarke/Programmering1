@@ -1,0 +1,25 @@
+/**
+* CSS Styling
+**/
+
+:root {
+  --lys: #fff;
+  --moerk: #790759;
+  --over: #325f35;
+}
+
+/* styling af submit-knappen */
+input[type=submit] {
+    width: 32ch;
+    background-color: var(--moerk);
+    color:var(--lys);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--over);
+  }
