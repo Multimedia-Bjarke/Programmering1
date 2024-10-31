@@ -1,0 +1,77 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header, 
+footer {
+    background-color: var(--peach);
+    color: var(#fff9bb);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.flexcol {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+/* responsive billeder */
+
+/* 5 farver */
+
+:root{
+    --hvid: #ffffff;
+    --peach: #ffd6aa;
+    --beige: #fff9bb;
+    --sort: #000;
+    --grå: #dadada;
+}
+
+/* Tablets (min. bredde: 600px) */
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section {
+        width: 45%;
+    }
+}
+
+/* Laptops og større skærme (min. bredde: 1024px) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    header, footer {
+        padding: 2rem;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    section {
+        width: 40%;
+    }
+}

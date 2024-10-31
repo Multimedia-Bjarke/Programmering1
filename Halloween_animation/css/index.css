@@ -1,0 +1,257 @@
+/*Background image*/
+body{
+    background-image: url(/images/background_eyes.jpg);
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    position: fixed;
+    z-index: -10;
+}
+    
+/*Christians animation*/
+
+#hovedchristian {
+    position: relative;
+    margin-left: 1100px;
+    margin-top: -500px;
+    width: 333px;
+    height: 333px;
+    animation-name: hoved1; 
+    animation-duration: 20s; 
+    transform: scale(0.6);
+    z-index: -1;
+    }
+
+    @keyframes hoved1 { 
+       0% {left: 200px;}
+       15% {left: 0px;}
+       25% {left: 200px;}
+       80% {left: 80px; transform: scale(0.3);}
+       85% {left: 200px;}
+       90% {left: 0px; transform: scale(0.6);}
+       95% {left: 200px;}
+       100% {left: 0px;}
+
+      }
+
+  
+      
+/*Annikas animation*/
+#perannika {
+    visibility: hidden;
+    position: absolute;
+    margin: 0px;
+    width: 100px;
+    height: auto;
+    top: -200px;
+    left: 200px;
+    animation-name: annika;
+    animation-duration: 10s;
+    transform: scale(1.3);
+    z-index: -1;
+    animation-delay: 10s;
+}
+
+@keyframes annika {
+    from {visibility: visible;
+        bottom: 200px;
+    }
+    to {visibility: visible;
+        bottom: 4443px;    
+}
+}
+
+
+/*Bjarkes animation*/
+
+#blooddrip{
+    position: absolute;
+    top: 500px;
+    left: 3000px;
+    background: transparent;
+}
+
+#floatingeyes{
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+    z-index: 1;
+    transform: scale(0.5);
+    z-index: 10;
+}
+#floatingeyes:hover{
+transform: scale(1);
+}
+
+/*
+#ghostbjarke{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    animation-name: FlashGhost;
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+    animation-delay: 300ms;
+    z-index: -2;
+}
+*/
+
+/*Lyd*/
+#audioControl1{
+    opacity: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*Karolines Animation*/
+#KarolineBlod {
+    top: -200px;
+    position: relative;
+    width: 100%;
+    height: 150%;
+    animation-name: blood;
+    animation-duration: 4s;
+    opacity: 80%;
+}
+
+@keyframes blood {
+    from {
+        top: -1000px;
+    }
+    to {
+        top: -200px;
+    }
+}
+
+/*Karoline Bats*/
+#Thebats {
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    animation-name: bats;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    opacity: 50%;
+    z-index: -2;
+}
+
+#ThebatsMirror {
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    transform: scaleX(-1);
+    animation-name: batsMirrored;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    opacity: 50%;
+    z-index: -2;
+
+}
+
+@keyframes bats {
+    0% {
+        bottom: -50%;
+        right: -50%;
+        transform: scale(0.5);
+    }
+    50% {
+        bottom: 0;
+        right: 0;
+        transform: scale(1);
+    }
+    100% {
+        bottom: 100%;
+        right: -10%;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes batsMirrored {
+    0% {
+        bottom: -50%;
+        left:-50%;
+        transform: scale(0.5) scaleX(-1); /* Kombinerer spejlvendelse */
+    }
+    50% {
+        bottom: 0;
+        left: 0%;
+        transform: scale(1) scaleX(-1);
+    }
+    100% {
+        bottom: 100%;
+        left: -10%;
+        transform: scale(0.5) scaleX(-1);
+    }
+}
+
+/*Karoline blod splat*/
+#blodsplat {
+    position: fixed;
+    top: -10vh;
+    left: -10vw;
+    width: 120vw;
+    height: 120vh;
+    animation: blink 2s ease-in-out infinite;
+    opacity: 0.3;
+}
+
+/* Blinkende animation */
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.3; }
+}
+
+/*Freja*/
+#freja img{
+    position: relative;
+    width: 500px;
+    height: auto;
+    background-color: transparent;
+    animation-name: freja; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    z-index: -3;
+
+}
+
+@keyframes freja {
+    from {left: -300px;}
+  to {left: 3000px;}
+}
+
+footer{
+    position: absolute;
+    top:550px;
+    background-color: rgba(255, 0, 0, 0);
+    height: 300px;
+    width: 1500px;
+    z-index: -3;
+}
+
+
+
+/*Cille*/
+#ghost {
+    width: 300px; /* Juster billedets størrelse */
+    height: 300px;
+    margin-top: 10px;
+    background: transparent;
+    position: relative;
+    left: 1500px;
+    top: -700px;
+    animation-name: ghost;
+    animation-duration: 5s;
+    animation-delay: 10s;
+  }
+  
+  /* Keyframes til animationen */
+  @keyframes ghost {
+    from {left: 1500px;}
+    to {left: -1000px;}
+  }

@@ -1,0 +1,72 @@
+/* Background */
+
+body{
+    background-image: url(/images/scary-gif4.gif);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -10;
+
+}
+
+
+#tilbage{
+    text-decoration: none;
+    color: red;
+    /*font-family: ;*/
+    transform: scale(0.4);
+    z-index: +1;
+}
+
+#tilbage:hover{
+    transform: scale(0.8);
+    transition: ease-in 0.3s;
+}
+
+
+
+#perchristian{
+    visibility: hidden;
+    position: absolute;
+    margin: 0px;
+    width: 300px;
+    height: auto;
+    top: -200px;
+    left: 200px;
+    animation-name: perunderside;
+    animation: 0.2;
+    animation-delay: 1s;
+   
+    
+}
+
+@keyframes perunderside {
+   from {visibility: hidden;}
+   to {visibility: visible;}
+}
+
+
+/* Tekst */
+#more{
+    color: red;
+    font-family: "scary";
+    position: relative;
+    top: 250px;
+    left: 1000px;
+    letter-spacing: 2px;
+}
+
+#link2{
+    position: relative;
+    text-decoration: none;
+    color: red;
+    z-index: -;
+    
+}
+
+@font-face {
+    font-family: "scary";
+    src: url(/fonts/crown_horror/CROWN\ HORROR.ttf);
+}
+

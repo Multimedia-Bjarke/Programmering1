@@ -1,0 +1,46 @@
+/* første animation */
+
+
+/* farver */
+#farver {
+    position: relative;
+    width: 333px;
+    height: 333px;
+    background-color: rgba(255, 0, 0, 0);
+    animation-name: farveskift; /* vælg et andet navn til animationerne end example ;-) */
+    animation-duration: 2s; /* se de mange animations-muligheder: start, stop, loop, etc. */
+}
+/* The animation code  via from-to*/
+@keyframes farveskift {
+    from {background-color: rgba(255, 0, 0, 0);
+        left: 777px;
+        top: 777px;}
+    to {background-color: rgba(255, 255, 0, 0); 
+        left: 0px;
+        top: 0px;}
+  }
+img{
+    height: 255px;
+    width: auto;
+}
+/* Græskaranimation*/
+#graskar img{
+    position: relative;
+    width: 222px;
+    height: auto;
+    animation-name: flytgraskar; /* vælg et andet navn til animationerne end example ;-) */
+    animation-duration: 10s; /* se de mange animations-muligheder: start, stop, loop, etc. */
+
+}
+
+/* The animation code 2 via procenter */
+@keyframes flytgraskar {
+    0%   {background-color: rgba(255, 0, 0, 0);
+        top: -333px;} /* du kan selv sætte flere eller fætte "trin" på her */
+    25%  {background-color: rgba(255, 255, 0, 0);
+        top: 400px;}
+    50%  {background-color: rgba(0, 0, 255, 0);
+        top: 500px}
+    100% {background-color: rgba(0, 128, 0, 0);
+    top: 999px}
+  }
