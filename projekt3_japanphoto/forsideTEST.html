@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>Forside</title>
+  </head>
+  <body>
+<header>
+    <nav class="navbar">
+      <div class="burger-menu" onclick="toggleDrawer()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="images/Logo_jpnphoto.svg" alt="JPAN Logo" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="produkter.html" title="Produkter">Produkter</a>
+        <a href="services.html" title="Services">Services</a>
+        <a href="om_os.html" title="Om os">Om os</a>
+      </div>
+      <div class="cart-icon">
+        <a href="indkoebskurv.html">
+          <img src="images/indkoebskurv.svg" alt="Indkøbskurv" />
+        </a>
+      </div>
+    </nav>
+
+    <!-- Add mobile drawer -->
+    <div class="mobile-drawer">
+      <div class="nav-links">
+        <a href="produkter.html" title="Produkter">Produkter</a>
+        <a href="services.html" title="Services">Services</a>
+        <a href="om_os.html" title="Om os">Om os</a>
+      </div>
+    </div>
+
+    <!-- Add overlay -->
+    <div class="overlay" onclick="toggleDrawer()"></div>
+
+
+    <section id="hero">
+            <div id="hero_title">
+                <h1 id="print">Print dine <br> bedste billeder</h1>
+                <button class="buttonHov">
+                    <a href="#">se mere</a>
+                </button>
+        </div>
+    </section>
+  </header>
+
+
+    <main>
+
+        <section id="mestpop">
+            <article id="pop1">
+                <img src="images/forside/pop1.webp" alt="produktbillede af fremkaldte billeder">
+                <h2>Billeder</h2>
+                <p>Print dine bedste minder i <br>høj kvalitet.</p>
+                <button class="buttonHov"><a href="#">se mere</a></button>
+            </article>
+
+            <article id="pop2">
+                <img src="images/forside/pop2.webp" alt="porduktbillede af en fotobog">
+                <h2>Fotobøger</h2>
+                <p>Saml dine fotos i en smuk <br> og personlig bog.</p>
+                <button class="buttonHov"><a href="#">se mere</a></button>
+            </article>
+
+            <article id="pop3">
+                <img src="images/forside/pop3.webp" alt="produktbillede af en fotokalender">
+                <h2>Fotokalender</h2>
+                <p>Skab en unik kalender med <br>dine egne billeder.</p>
+                <button class="buttonHov"><a href="#">se mere</a></button>
+            </article>
+
+            <article id="pop4">
+                <img src="images/forside/pop4.webp" alt="porduktbilleder af et vægbillede">
+                <h2>Vægbilleder</h2>
+                <p>Pynt dit hjem med billeder i <br> stort format.</p>
+                <button class="buttonHov"><a href="#">se mere</a></button>
+            </article>
+        </section>
+        
+        <section id="juletid">
+        <div id="juletid_title">
+            <h1>Juletid</h1>
+        </div>
+        <div id="julebanner">
+            <div id="julegave_title">
+                <h1>Find din julegave <br> i god tid</h1>
+                <button class="button_invert"><a href="#">se mere</a></button>
+            </div>
+        </div>
+        </section>
+
+        
+        <section id="pas">
+            <h2>Vores services</h2>
+            <div id="flex_pas">
+            <div id="pas_img" class="image-box">
+                <img src="images/forside/pas_forside.webp" alt="billede af pas">
+            </div>
+            <div id="pas-txt">
+                <h2>Pas/ID foto</h2>
+                <p class="txt-justify">Hos Japan Photo tilbyder vi professionelle ID- og pasfotos, der lever op til alle officielle krav og standarder. Uanset om du skal bruge et foto til pas, kørekort, visum eller andre officielle dokumenter, kan du stole på os for et præcist og vellignende resultat. Vi sørger for hurtig levering, så du kan få dit ID-foto klar, når du har brug for det.</p>
+            </div>
+        </div>
+        </section>
+        
+        <section id="analog">
+            <div id="flex_analog">
+                <div id="analog_img">
+                    <img src="images/forside/Analog.webp" alt="billede af analog film">
+                </div>
+                <div id="analog_txt">
+                    <h2>Analog fremkaldelse</h2>
+                    <p class="txt-justify">Hos Japan Photo tilbyder vi professionelle ID- og pasfotos, der lever op til alle officielle krav og standarder. Uanset om du skal bruge et foto til pas, kørekort, visum eller andre officielle dokumenter, kan du stole på os for et præcist og vellignende resultat. Vi sørger for hurtig levering, så du kan få dit ID-foto klar, når du har brug for det.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tryghed">
+            <div>
+                <h2>Hurtig levering</h2>
+                <p>Få dine billeder leveret <br> hurtigt og nemt</p>
+            </div>
+
+            <div>
+                <h2>Kvalitet</h2>
+                <p>Prints i højeste kvalitet og altid <br> med tilfredshedsgaranti</p>
+            </div>
+
+            <div>
+                <h2>Fri returnering</h2>
+                <p>Altid nem retur</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+      <div id="description">
+        <section id="top">
+            <div id="description_textbox">
+                <h2>Japan Photo</h2>
+                <p id="description_text">
+                Japan Photo, etableret i Aarhus i 1985, er en af Danmarks førende
+                fotoforhandlere med et bredt udvalg af kvalitetskameraer, udstyr og
+                fotoprint. Med over tre årtiers erfaring er Japan Photo kendt for
+                sin personlige kundeservice og produkter, der henvender sig til både
+                amatører og professionelle fotografer. Vi brænder for at hjælpe dig
+                med at indfange og bevare dine bedste øjeblikke. Besøg os online
+                eller i butikken og oplev vores verden af fotografi.
+                </p>
+            </div>
+            
+            <div id="de3">
+                <div id="adresse">
+                <h2>Adresse</h2>
+                <p>Ryesgade 31 <br />8000 Aarhus C</p>
+            </div>
+
+        <div id="aabningstider">
+          <h2>Åbningstider</h2>
+          <p>
+            Man-Fre 10-17:30 <br />Lørdag 10-15:00 <br />
+            Søndag lukket
+          </p>
+          <div id="soMe">
+            <p>Følg os</p>
+            <img src="images/icon_fb.svg" alt="icon_fb" />
+            <img src="images/icon_insta.svg" alt="icon_insta" />
+          </div>
+        </div>
+
+        <div id="kontakt">
+          <h2>Kontakt</h2>
+          <p>
+            aarhus-ryesgade@japanphoto.dk <br />
+            86 13 22 32
+          </p>
+          <div id="app">
+            <p>Find vores app</p>
+            <img src="images/icons_app+qr.svg" alt="icon_app+QR" />
+            </div>
+        </div>
+        </div>
+
+       
+        </section>
+
+      <section id="bottom" title="betalingsmetoder">
+        <div id="betalingsmetoder">
+          <p>Betalingsmetoder</p>
+          <img src="images/betalingsmetoder.svg" alt="icon_betalingsmetoder"/>
+        </div>
+
+        
+      </section>
+    </footer>
+  </body>
+</html>

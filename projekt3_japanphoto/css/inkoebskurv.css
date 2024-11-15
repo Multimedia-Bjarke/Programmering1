@@ -1,0 +1,21 @@
+/* Import base styles */
+@import 'om_os.css';
+
+/* Shopping cart specific styles */
+.empty-cart-message {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: calc(100vh - 78px); /* Subtract navbar height */
+    margin-top: 78px; /* Add navbar height as margin */
+}
+
+.empty-cart-message h2 {
+    position: absolute;
+    top: 33vh; /* 33% of viewport height */
+    text-align: center;
+    color: var(--color-text);
+    font-family: var(--font-regular);
+    font-size: var(--fs-underrubrik);
+    font-weight: var(--weight-regular);
+}

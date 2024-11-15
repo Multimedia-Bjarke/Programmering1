@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Services</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="burger-menu" onclick="toggleDrawer()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="images/Logo_jpnphoto.svg" alt="JPAN Logo" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="produkter.html" title="Produkter">Produkter</a>
+          <a href="services.html" title="Services" class="active">Services</a>
+          <a href="om_os.html" title="Om os">Om os</a>
+        </div>
+        <div class="cart-icon">
+          <a href="indkoebskurv.html">
+            <img src="images/indkoebskurv.svg" alt="Indkøbskurv" />
+          </a>
+        </div>
+      </nav>
+
+      <!-- Add mobile drawer -->
+      <div class="mobile-drawer">
+        <div class="nav-links">
+          <a href="produkter.html" title="Produkter">Produkter</a>
+          <a href="services.html" title="Services" class="active">Services</a>
+          <a href="om_os.html" title="Om os">Om os</a>
+        </div>
+      </div>
+
+      <!-- Add overlay -->
+      <div class="overlay" onclick="toggleDrawer()"></div>
+    </header>
+
+
+    <main>
+      <div class="overskrift">
+        <h2>Vores services</h2>
+      </div>
+      <div class="pasfoto">
+        <div class="pasfototekst">
+          <h2>Pasfoto</h2>
+          <img src="/images/pas3.png" alt="Pas" id="pas2" />
+          <p>
+            Vi tager pasfotos til:
+            <br />
+            <br />&bull;Dit pas
+            <br />
+            <br />&bull;Kørekort
+            <br />
+            <br />&bull;ID Kort
+            <br />
+            <br />&bull;Togkort
+            <br />
+            <br />&bull;Buskort
+            <br />
+            <br />&bull; Visum
+          </p>
+        </div>
+        <img src="/images/pas3.png" alt="Pas" id="pas" />
+      </div>
+      <div class="pasfotopriser">
+        <img src="/images/pasphotos3.png" alt="" />
+        <div class="pasfotoprisertekst">
+          <h2>Priser</h2>
+          <p>
+            EU pasbillede
+            <br />(35x45mm) <br />&bull;4 stk. DKK 100,- <br />&bull;6 stk. DKK
+            125,- <br /><br />Amerikansk pasbillede <br />(50x50mm)
+            <br />&bull;2 stk. DKK 100,- <br />Digitalt pasbillede &bull;1stk.
+            DKK 150,- <br /><br />Blå Baggrund <br />(35x45mm) <br />&bull;4
+            stk. DKK 250,-
+          </p>
+        </div>
+      </div>
+      <section class="analog_section">
+      <div class="analog">
+        <img src="/images/analog3.png" alt="analog" />
+        <h2>Analog fremkaldelse</h2>
+      </div>
+    </section>
+      
+      
+      <section class="analogpriser_section">
+        <div class="analogpriser">
+        <div class="type">
+          <h2>Type</h2>
+          <p>
+            Kun fremkaldelse
+            <br />
+            <br />
+            <br />
+            Frem+print 10x15 cm
+            <br />
+            <br />
+            <br />
+            Frem+print 2 sæt 10x15
+            <br />
+            <br />
+            <br />
+            Frem+print 13x18 cm
+            <br />
+            <br />
+            <br />
+            S/H kun fremkaldelse
+            <br />
+            <br />
+            <br />
+            S/H frem+print 10x15
+          </p>
+        </div>
+
+        <div class="etfilm">
+          <h2>135 film</h2>
+          <p>
+            99 kr
+            <br />
+            <br />
+            <br />
+            159 kr
+            <br />
+            <br />
+            <br />
+            209 kr
+            <br />
+            <br />
+            <br />
+            189 kr
+            <br />
+            <br />
+            <br />
+            109 kr
+            <br />
+            <br />
+            <br />
+            169 kr
+          </p>
+        </div>
+        <div class="tofilm">
+          <h2>120 film</h2>
+          <p>
+            129 kr
+            <br />
+            <br />
+            <br />
+            150 kr
+            <br />
+            <br />
+            <br />
+            200 kr
+            <br />
+            <br />
+            <br />
+            169 kr
+            <br />
+            <br />
+            <br />
+            99 kr
+            <br />
+            <br />
+            <br />
+            149 kr
+          </p>
+        </div>
+      </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="description">
+        <section id="top">
+            <div id="description_textbox">
+                <h2>Japan Photo</h2>
+                <p id="description_text">
+                Japan Photo, etableret i Aarhus i 1985, er en af Danmarks førende
+                fotoforhandlere med et bredt udvalg af kvalitetskameraer, udstyr og
+                fotoprint. Med over tre årtiers erfaring er Japan Photo kendt for
+                sin personlige kundeservice og produkter, der henvender sig til både
+                amatører og professionelle fotografer. Vi brænder for at hjælpe dig
+                med at indfange og bevare dine bedste øjeblikke. Besøg os online
+                eller i butikken og oplev vores verden af fotografi.
+                </p>
+            </div>
+            
+            <div id="de3">
+                <div id="adresse">
+                <h2>Adresse</h2>
+                <p>Ryesgade 31 <br />8000 Aarhus C</p>
+            </div>
+
+        <div id="aabningstider">
+          <h2>Åbningstider</h2>
+          <p>
+            Man-Fre 10-17:30 <br />Lørdag 10-15:00 <br />
+            Søndag lukket
+          </p>
+          <div id="soMe">
+            <p>Følg os</p>
+            <img src="images/icon_fb.svg" alt="icon_fb" />
+            <img src="images/icon_insta.svg" alt="icon_insta" />
+          </div>
+        </div>
+
+        <div id="kontakt">
+          <h2>Kontakt</h2>
+          <p>
+            aarhus-ryesgade@japanphoto.dk <br />
+            86 13 22 32
+          </p>
+          <div id="app">
+            <p>Find vores app</p>
+            <img src="images/icons_app+qr.svg" alt="icon_app+QR" />
+            </div>
+        </div>
+        </div>
+
+       
+        </section>
+
+      <section id="bottom" title="betalingsmetoder">
+        <div id="betalingsmetoder">
+          <p>Betalingsmetoder</p>
+          <img src="images/betalingsmetoder.svg" alt="icon_betalingsmetoder"/>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+        function toggleDrawer() {
+            document.querySelector('.mobile-drawer').classList.toggle('active');
+            document.querySelector('.overlay').classList.toggle('active');
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indkøbskurv</title>
+    <link rel="stylesheet" href="css/indkoebskurv.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="burger-menu" onclick="toggleDrawer()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="images/Logo_jpnphoto.svg" alt="JPAN Logo" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="produkter.html" title="Produkter">Produkter</a>
+          <a href="services.html" title="Services">Services</a>
+          <a href="om_os.html" title="Om os">Om os</a>
+        </div>
+        <div class="cart-icon">
+          <a href="indkoebskurv.html">
+            <img src="images/indkoebskurv.svg" alt="Indkøbskurv" />
+          </a>
+        </div>
+      </nav>
+
+      <div class="mobile-drawer">
+        <div class="nav-links">
+          <a href="produkter.html" title="Produkter">Produkter</a>
+          <a href="services.html" title="Services">Services</a>
+          <a href="om_os.html" title="Om os">Om os</a>
+        </div>
+      </div>
+
+      <div class="overlay" onclick="toggleDrawer()"></div>
+    </header>
+
+    <main>
+      <div class="empty-cart-message">
+        <h2>Du har glemt at tilføje noget til din kurv</h2>
+      </div>
+    </main>
+
+    <script>
+      function toggleDrawer() {
+        document.querySelector(".mobile-drawer").classList.toggle("active");
+        document.querySelector(".overlay").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
