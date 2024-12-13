@@ -1,0 +1,729 @@
+/* COLORS and FONTSIZES */
+:root{
+    --broedtekst: #000;
+    --hover: #D31212;
+    --footer: #EEEEEE;
+    --button: #e31313;
+
+    --font-regular: "poppins", sans-serif;
+    --weight-regular: 400;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --style-normal: normal;
+    
+    /* Font size */
+    --fs-rubrik: 28px;
+    --fs-underrubrik: 24px;
+    --fs-button: 20px;
+    --fs-body: 16px;
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: "poppins";
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+p{
+    font-size: 16px;
+}
+
+/* Background */
+body{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left:0;
+    margin-right: 0;
+    font-family: "poppins";
+}
+
+/* HEADER */
+.cart-icon {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;  /* Default padding for larger screens */
+}
+
+.cart-icon img {
+    width: 24px;
+    height: auto;
+}
+
+.nav-logo img {
+    height: clamp(55px, 5vw + 30px, 60px);
+    width: auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 78px;
+    background: var(--color-background);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    mix-blend-mode: multiply;
+}
+
+.nav-logo {
+    margin-left: 60px;
+}
+
+.nav-links {
+    margin-left: auto;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    /* Positioning */
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    
+    /* Typography */
+    font-family: var(--font-regular);
+    font-size: 20px;
+    font-weight: var(--weight-regular);
+    text-decoration: none;
+    
+    /* Colors */
+    color: var(--color-text);
+    /* Transitions */
+    transition: color 0.3s ease;
+}
+
+/* Create a hidden bold version that reserves space */
+
+.cart-icon img {
+    width: auto;
+    height: 24px;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cart-icon a:hover img {
+    filter: invert(19%) sepia(91%) saturate(1184%) hue-rotate(354deg) brightness(85%) contrast(105%);
+}
+
+
+.nav-links a:hover {
+    color: var(--color-red);
+}
+
+/* Active state */
+.nav-links a.active {
+    color: var(--color-red);
+}
+
+/* Cart icon styles */
+.nav-links img {
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center;
+    stroke-width: 0;
+    stroke: var(--color-red);
+}
+
+.nav-links img:hover {
+    filter: invert(19%) sepia(91%) saturate(1184%) hue-rotate(354deg) brightness(85%) contrast(105%);
+    transform: scale(1.05);
+}
+
+.nav-logo a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    display: block; /* Removes any unwanted space below the image */
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1001;
+}
+
+.burger-menu div {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* MAIN */
+
+
+    /* Sections*/
+        #hero{ /* Heroen er en del af header, men stadig en section*/
+            background-image: url(/images/forside/hero_banner_grad.svg);
+            background-repeat: no-repeat;
+            height:400px;      
+            margin-top: 78px;
+
+        }
+            #hero_title{
+                display: block;
+                width: 100%; /* før 42% */
+                color: white;
+                font-size: 48px; /* pga. fixed navbar*/
+                text-align: right;
+                
+            }
+            
+
+        #mestpop{
+            display: grid;
+            width: 100%;
+            padding: 2rem 0;
+            row-gap: 4rem;
+            column-gap: 5rem;
+            grid-template-columns: repeat(4, 230px);
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        
+        #juletid{
+            background-repeat: no-repeat;
+            height:100%;     
+            display: block;   
+            justify-content: flex-end;
+            padding-bottom: 5rem;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+            #juletid_title{
+                border-color: #000;
+                border-style: none;
+                margin-bottom:-3em;
+            }
+            #julebanner{
+                background-image: url(/images/forside/juletid_banner_grad.svg);
+                background-repeat: no-repeat;
+                height:400px;
+            }
+
+            #julegave_title{
+                display: block;
+                width: 100%; /* før 42% */
+                color: white;
+                font-size: 48px; /* pga. fixed navbar*/
+                text-align: left;
+            }
+        #pas{
+            display: block;
+            padding-bottom:8rem;
+            padding-left: 60px;
+            padding-right:60px;
+        }
+            #pas_img{
+                display: flex;
+                width: 50%;
+                padding-right: 60px ;
+            }
+            #pas_txt{
+                display: block;
+                width: 50%;
+            }
+            #flex_pas{
+                display: flex;
+                justify-content: space-between;
+            }
+            .txt-justify{
+                text-align: justify;
+            }
+        #analog{
+            display: flex;
+            padding-bottom:10rem;
+            padding-left: 60px;
+            padding-right:60px;
+        }
+            #analog_img{
+                display: flex;
+                width: 50%;
+            }
+            #analog_txt{
+                display: block;
+                width: 50%;
+                padding-right: 40px ;
+            }
+            #flex_analog{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+            }
+            .txt-justify{
+                text-align: justify;
+            }
+        
+        #tryghed{
+            display: grid;
+            padding: 2rem 0;
+            row-gap: 4rem;
+            column-gap: 10rem;
+            grid-template-columns: repeat(3, 230px);
+            justify-content: center;
+            overflow-x: hidden;
+        }
+            
+/* Buttons */
+button{
+    background-color: var(--button);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button a{
+    background-color: var(--button);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.buttonHov:hover{
+    color:white;
+    transform: scale(0.90);
+    transition: ease-in 0.05s;
+}
+
+.button_invert:hover{
+    color:white;
+    transform: scale(0.90);
+    transition: ease-in 0.05s;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--footer);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: "poppins";
+}
+
+#top{
+    width: 100%;
+    display: flex;
+    padding-left: 60px;
+
+}
+#bottom{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+}
+
+#description{
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+#description_textbox{
+    width: clamp(600px, 100%, 400px);
+}
+#description h2{
+    width: 400px;
+}
+#description_text{
+    text-align:justify;
+    width: clamp(400px, 70%, 400px);
+}
+
+#de3{
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    row-gap: 3rem;
+    column-gap: 1rem;
+    justify-content: center;
+    overflow-x: visible;
+    text-align: left;
+    width: clamp(600px,100%,1200px);
+}
+#adresse{
+    width: 100%;
+    display: block;
+    justify-content: flex-start;
+}
+#aabningstider{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#kontakt{
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+
+
+/* RESPONSIVE */
+    /* Big screens - max 1900px */
+        @media screen and (max-width: 1900px) {
+            #flex_pas{
+                display: flex;
+                
+            }
+            #flex_analog{
+                display: flex;
+                
+            }
+        }
+
+
+    /* Medium screens - 2 columns */
+        @media screen and (max-width: 800px) {
+        #mestpop {
+            grid-template-columns: repeat(2, 230px);
+            }
+        #flex_pas{
+                display: block;
+                
+            }
+        #pas-txt{
+            width: 100%;
+        }
+        .txt-justify{
+            width: 100%;
+        }
+        #julebanner{
+            width: 102%;
+            border-radius: 3px;
+        }
+        #analog{
+            width: 100%;
+        }
+        #flex_analog{
+                display: block;
+                
+            }
+        #pas_img img{
+            width: 100vw;
+        }
+        #analog_img{
+            padding-bottom: 3vw;
+            width: 100%;
+        }
+
+        #analog_txt{
+            width: 85%;
+            padding-right: 60px;
+        }
+        #tryghed{
+            display: grid;
+            grid-template-columns: repeat(3, 230px);
+            row-gap: 3rem;
+            column-gap: 1rem;
+            justify-content: center;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        
+        /* FOOTER */
+        footer{
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            display: grid;
+        }
+
+        #top{
+            width: 100%;
+            display: flex;
+            text-align: center;
+
+
+        }
+        #bottom{
+            width: 200px;
+            display: block;
+            justify-content: space-between;
+            padding-left: 0px;
+            text-align: right;
+        }
+
+        #description{
+            padding-left: 10px;
+            padding-right: 40px;
+            text-align: center;
+            display: block;
+            width: clamp(600px, 100%, 400px);
+        }
+        #de3{
+            grid-template-columns: repeat(1, 230px);
+            justify-content: center;
+        }
+
+        #description_textbox{
+            text-align: center;
+            padding-left: 5vw;
+            padding-right: 12vw;
+        }
+        #description h2{
+            width: 400px;
+        }
+        #description_text{
+            text-align:justify;
+            width: clamp(400px, 40vw, 400px);
+        }
+
+        #adresse{
+            width: 100%;
+            display: block;
+            justify-content: flex-start;
+        }
+        #aabningstider{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        }
+        
+    
+
+    /* Small screens - 1 column */
+        @media screen and (max-width: 576px) {
+            #mestpop {
+                grid-template-columns: 230px;
+            }
+            .navbar {
+                justify-content: center;
+                position: relative;
+                padding: 0 20px;
+            }
+        
+            .nav-links {
+                display: none;
+            }
+            
+            .burger-menu {
+                display: flex;
+                position: absolute;
+                left: 30px;
+            }
+        
+            .nav-logo {
+                margin: 0;
+            }
+        
+            .nav-links a {
+                margin: 0;
+            }
+        
+            .cart-icon {
+                position: absolute;
+                right: 20px;
+                padding-right: 30px; 
+            }
+            #hero h1{
+                font-size: 40px;
+            }
+            #julegave_title{
+                font-size: 30px;
+                text-align: left;
+            }
+            #juletid_title{
+                padding-bottom: 2rem;
+            }
+            #flex_pas{
+                display: block;
+            }
+            
+
+            /* Billeder */
+            #flex_pas img{
+                width: 76vw;
+            }
+            #flex_analog img{
+                width: 76vw;
+            }
+
+            #tryghed{
+                display: grid;
+                grid-template-columns: repeat(1, 230px);
+                row-gap: 3rem;
+                column-gap: 1rem;
+                justify-content: center;
+                overflow-x: hidden;
+                text-align: center;
+            }
+            
+
+        /* FOOTER */
+            footer{
+                background-size: 100%;
+                width: 100%;
+                height: 100%;
+                font-size: 15px;
+                display: grid;
+            }
+
+            #top{
+                width: 100%;
+                display: grid;
+                text-align: center;
+                padding-bottom: 12vw;
+
+
+
+            }
+            #bottom{
+                width: 200px;
+                display: block;
+                justify-content: space-between;
+                padding-left: 0px;
+                text-align: center;
+            }
+            #bottom p{
+                width: 398px;
+            }
+
+            #betalingsmetoder{
+                justify-content: center;
+                padding-left: 12vw;
+                padding-right: 12vw;
+            }
+            #description{
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 40px;
+                text-align: center;
+                display: block;
+                width: clamp(600px, 100%, 400px);
+            }
+
+            #description_text{
+                text-align:justify;
+                width: 80vw;
+                justify-content: center;
+                width: clamp(400px, 40vw, 400px);
+            }
+
+            #de3{
+                grid-template-columns: repeat(1, 230px);
+                justify-content: center;
+            }
+            
+
+            #adresse{
+                width: 100%;
+                display: block;
+                justify-content: flex-start;
+            }
+            #aabningstider{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+        }
+
+
+/*Responsive NAVBAR */
+
+    /* Add styles for mobile drawer */
+    .mobile-drawer {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--color-background);
+        z-index: 999;
+        transition: left 0.3s ease;
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.1);
+        padding-top: 100px;
+    }
+
+    .mobile-drawer.active {
+        left: 0;
+    }
+
+    .mobile-drawer .nav-links {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .mobile-drawer .nav-links a {
+        font-size: 18px;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Overlay for when drawer is open */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
+    /* Update media query */
+    @media screen and (max-width: 768px) {
+        .navbar .nav-links {
+            display: none;
+        }
+        
+        .burger-menu {
+            display: flex;
+        }
+
+        .mobile-drawer .nav-links {
+            display: flex;
+        }
+    }
+
+    /* Burger menu animation when drawer is open */
+    .mobile-drawer.active ~ .navbar .burger-menu div {
+        background-color: var(--color-text);
+    }
+
+    /* Optional hover effect */
+    .burger-menu:hover div {
+        background-color: var(--color-red);
+    }
+
+        
+        

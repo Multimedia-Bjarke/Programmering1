@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Component</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <!-- Burger Menu for Mobile -->
+        <div class="burger-menu" onclick="toggleDrawer()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Logo -->
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="images/Logo_jpnphoto.svg" alt="JPAN Logo" />
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <a href="produkter.html" title="Produkter">Produkter</a>
+          <a href="services.html" title="Services">Services</a>
+          <a href="om_os.html" title="Om os">Om os</a>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="cart-icon">
+          <a href="indkoebskurv.html">
+            <img src="images/indkoebskurv.svg" alt="Indkøbskurv" />
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Drawer -->
+      <div class="mobile-drawer">
+        <div class="nav-links">
+          <a href="produkter.html" title="Produkter">Produkter</a>
+          <a href="services.html" title="Services">Services</a>
+          <a href="om_os.html" title="Om os">Om os</a>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="overlay" onclick="toggleDrawer()"></div>
+    </header>
+
+    <script>
+      function toggleDrawer() {
+        document.querySelector(".mobile-drawer").classList.toggle("active");
+        document.querySelector(".overlay").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
